@@ -1,3 +1,4 @@
+import { categoryRoutes } from "@/routes/category.routes";
 import { productRoutes } from "@/routes/product.routes";
 import cors from "cors";
 import express from "express";
@@ -13,6 +14,6 @@ app.get("/", (req, res) => {
 
 
 app.use("/product", productRoutes);
-app.use("/category", productRoutes);
+app.use("/category", categoryRoutes);
 
 export default app;
