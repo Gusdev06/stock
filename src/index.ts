@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 
 
 
-app.use("/products", productRoutes);
+app.use("/product", productRoutes);
+app.use("/category", productRoutes);
 
 export default app;
